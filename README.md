@@ -4,9 +4,12 @@ If source interface has ethernet headers it sends packets as is without any modi
 This uses libpcap to capture packets and send them to ethernet interface. If you need high performance you should use different solution, for example, dpdk or netmap.
 
 ## To build:
+```
 $ cmake CMakeLists.txt
-
 $ make
+```
 ## To use:
+```
 # ip2eth -i <from_device> -o <to_device>  
+```
 It works in background. To stop program just send kill signal.
