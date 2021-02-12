@@ -5,7 +5,8 @@ This uses libpcap to capture packets and send them to ethernet interface. If you
 
 ## To build:
 $ cmake CMakeLists.txt
+
 $ make
 ## To use:
-\# ip2eth -i <from_device> -o <to_device>  
+# ip2eth -i <from_device> -o <to_device>  
 It works in background. To stop program just send kill signal.
